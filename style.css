@@ -1,0 +1,33 @@
+body {
+    background-image: url(backgroundimage.jpg);
+    background-size: cover;
+}
+
+h2 {
+    color: #aa4139;
+    text-align: center;
+    cursor: pointer;
+}
+
+p {
+    color: green;
+    text-transform: capitalize;
+    line-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+.webtext {
+    color: antiquewhite;
+}
+
+#div1 {
+    background: rgba(0, 255, 0, 0.2);
+}
