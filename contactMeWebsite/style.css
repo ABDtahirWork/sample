@@ -111,6 +111,19 @@ header {
     margin: 0px 24px;
 }
 
+/* Header HeroImage */
+
+header .hero-image {
+    position: relative;
+}
+
+header .hero-image img {
+    transition: all 300ms;
+}
+
+header .hero-image img:hover {
+    transform: rotate(-7deg);
+}
 
 
 /* Hidden Items */

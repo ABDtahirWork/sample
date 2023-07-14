@@ -1,0 +1,72 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: url(images/shutterstock_1541372228.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-form {
+    width: 790px;
+    height: 350px;
+    background-color: rgba(17, 52, 70, .95);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.code-input {
+    width: 60%;
+    border-radius: 29px;
+    background-color: #3a4e5a;
+    border-color: #fff;
+    background-image: url("https://virtualescape.herokuapp.com/static/media/tooltip.fa2389c4.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    background-color: rgba(17, 52, 70, .95)A;
+    border: none;
+    padding: 10px;
+    border-radius: 29px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.btn-test {
+    color: white;
+    background-image: linear-gradient(#75838b, #3b4246);
+    border-radius: 29px;
+}
+
+.btn-login {
+    background-image: linear-gradient(#2c5167, #2c5167);
+    color: #788b96
+}
