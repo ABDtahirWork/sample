@@ -92,6 +92,7 @@ body {
     font-style: normal;
     font-weight: 100;
     line-height: normal;
+    margin-top: 70px;
 }
 
 .title1 {
@@ -101,4 +102,76 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-top: 15px;
+}
+
+.card-container {
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-container .card {
+    height: 350px;
+    width: 280px;
+    background-image: linear-gradient(138deg, #3B5667 0%, #2C3D48 100%);
+    margin-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container {
+    width: 137px;
+    height: 137px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .card-container .card img {
+    border: 4px solid rgba(255, 255, 255, 0.5);;
+    border-radius: 50%;
+    padding: 14%;
+} */
+
+.card:last-child img {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.card-container .card .card-title {
+    margin-top: 70px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.card:last-child {
+    margin-right: 0;
+    background-image: linear-gradient(138deg, #D81B24 0%, #1A3751 100%);
+}
+
+.card-container .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    /* Adjust the width of the pattern */
+    height: 100%;
+    background-image: url('./images/card-bg.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    z-index: 1;
 }
