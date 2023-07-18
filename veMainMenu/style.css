@@ -14,7 +14,6 @@ body {
     src: url('./utility/Treasuremap-nRxz0.ttf');
 }
 
-
 .main-container {
     min-height: 100vh;
     width: 100%;
@@ -85,6 +84,14 @@ body {
 
 /* Headings */
 
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
 .heading1 {
     color: #FFF;
     font-family: 'Montserrat';
@@ -98,7 +105,7 @@ body {
 .title1 {
     color: #FFF;
     font-family: treasuremap;
-    font-size: 80px;
+    font-size: 1.8em;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -106,17 +113,19 @@ body {
 }
 
 .card-container {
+    width: 100%;
+    max-width: 1230px;
     margin-top: 6%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .card-container .card {
-    height: 350px;
-    width: 280px;
+    height: 250px;
+    width: 200px;
     background-image: linear-gradient(138deg, #3B5667 0%, #2C3D48 100%);
-    margin-right: 20px;
+    margin-right: 25px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -126,8 +135,8 @@ body {
 }
 
 .image-container {
-    width: 137px;
-    height: 137px;
+    width: 100px;
+    height: 100px;
     border: 4px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     display: flex;
@@ -141,22 +150,24 @@ body {
     padding: 14%;
 } */
 
-.card:last-child img {
+.card-container-col2 .card:last-child img {
+    width: 100px;
+    height: 100px;
     border: none;
     border-radius: 0;
     padding: 0;
 }
 
 .card-container .card .card-title {
-    margin-top: 70px;
+    margin-top: 50px;
     color: #FFFFFF;
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.card:last-child {
+.card-container-col2 .card:last-child {
     margin-right: 0;
     background-image: linear-gradient(138deg, #D81B24 0%, #1A3751 100%);
 }
@@ -174,4 +185,28 @@ body {
     background-position: right center;
     background-size: contain;
     z-index: 1;
+}
+
+.card-container-col1,
+.card-container-col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Media query for responsive layout at 990px */
+
+@media screen and (max-width: 990px) {
+    .card-container {
+      flex-direction: column; 
+      align-items: center;
+    }
+
+    .card-container-col1 .card:last-child {
+        margin-right: 0;
+    }
+
+    .card-container-col1 {
+        margin-bottom: 20px;
+    }
 }
