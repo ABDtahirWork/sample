@@ -1,0 +1,104 @@
+body {
+    margin: auto 0;
+    background: url(./images/bgImage.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Custom font */
+
+@font-face {
+    font-family: treasuremap;
+    src: url('./utility/Treasuremap-nRxz0.ttf');
+}
+
+
+.main-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar .nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15%;
+}
+
+.nav-btn-container .nav-btn {
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #35515D;
+    background-color: #113446;
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.connected-btn {
+    padding: 8px 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+.connected-btn img {
+    margin-right: 0.5em;
+}
+
+.exit-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    padding: 8px 18px 8px 25px;
+}
+
+.exit-btn img {
+    margin-right: 0.2em;
+}
+
+/* Headings */
+
+.heading1 {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.title1 {
+    color: #FFF;
+    font-family: treasuremap;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
