@@ -22,8 +22,6 @@ body {
     width: 100%;
     max-width: 790px;
     padding: 30px;
-    /* max-width: 760px; */
-    /* height: 350px; */
     background-color: rgba(17, 52, 70, .95);
     border-radius: 10px;
     display: flex;
@@ -64,24 +62,18 @@ h4 {
     border-radius: 29px;
     background-color: #3a4e5a;
     border-color: #fff;
-    /* background-image: url("https://virtualescape.herokuapp.com/static/media/tooltip.fa2389c4.svg");
-    background-repeat: no-repeat;
-    background-position: right center; */
     color: #fff;
     padding: 10px 25px;
     margin-top: 20px;
 }
 
 .code-input:focus {
-    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4), 0 2px 2px 0 #fff; */
     box-shadow: 0 0 7px #fff;
 }
 
 .code-input::placeholder {
     color: #fff;
 }
-
-
 
 .btn-container {
     width: 60%;

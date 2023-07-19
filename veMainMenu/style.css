@@ -36,10 +36,17 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 0;
+    margin: 20px 3%;
 }
 
 .navbar .nav-items .custom-margin {
-    margin-left: 18%;
+    margin-left: 0%;
+}
+
+.navbar .nav-items .custom-margin img {
+    width: 70%;
+    height: 70%;
 }
 
 .nav-btn-container {
@@ -56,12 +63,22 @@ body {
     background-color: #113446;
     color: white;
     font-family: Montserrat;
-    font-size: small;
+    font-size: 0.5em;
     font-weight: 400;
 }
 
+.nav-btn-container .nav-btn img {
+    width: 20%;
+    height: 20%;
+}
+
+.nav-btn-container .connected-btn img {
+    width: 13%;
+    height: 13%;
+}
+
 .connected-btn {
-    padding: 5px 20px;
+    padding: 5px 13px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -110,7 +127,7 @@ body {
 .heading1 {
     color: #FFF;
     font-family: 'Montserrat';
-    font-size: 25px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
@@ -131,28 +148,35 @@ body {
 .card-container {
     width: 100%;
     max-width: 1230px;
-    margin-top: 6%;
+    margin-top: 4%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .card-container .card {
-    height: 250px;
-    width: 200px;
+    height: 220px;
+    width: 180px;
+    margin-right: 15px;
     background-image: linear-gradient(138deg, #3B5667 0%, #2C3D48 100%);
-    margin-right: 25px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+    transform: skewX(-1deg);
+}
+
+.card-container-col2 .card:last-child {
+    margin-right: 0;
+    background-image: linear-gradient(138deg, #D81B24 0%, #1A3751 100%);
 }
 
 .image-container {
-    width: 100px;
-    height: 100px;
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
     border: 4px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     display: flex;
@@ -160,10 +184,10 @@ body {
     align-items: center;
 }
 
-
 .card-container-col2 .card:last-child img {
-    width: 100px;
-    height: 100px;
+    margin-top: 30px;
+    width: 80px;
+    height: 80px;
     border: none;
     border-radius: 0;
     padding: 0;
@@ -173,14 +197,14 @@ body {
     margin-top: 50px;
     color: #FFFFFF;
     font-family: Montserrat;
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
 }
 
-.card-container-col2 .card:last-child {
-    margin-right: 0;
-    background-image: linear-gradient(138deg, #D81B24 0%, #1A3751 100%);
+.image-container img {
+    width: 40%;
+    height: 40%;
 }
 
 .card-container .card::before {
@@ -195,6 +219,7 @@ body {
     background-position: right center;
     background-size: contain;
     z-index: 1;
+    border-radius: inherit;
 }
 
 .card-container-col1,
@@ -208,11 +233,11 @@ body {
 
 @media screen and (max-width: 1500px) {
     .navbar .nav-items .custom-margin {
-        margin-left: 10%;
+        margin-left: 0%;
     }
 
     .nav-btn-container {
-        margin-right: 10%;
+        margin-right: 18%;
     }
 }
 
@@ -252,7 +277,7 @@ body {
 
     .nav-menu-icon {
         display: initial;
-        margin-right: 5%;
+        margin-right: 1em;
     }
 }
 

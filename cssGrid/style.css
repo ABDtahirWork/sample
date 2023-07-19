@@ -1,7 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
-    /* grid-template-columns: auto; means fill the spaces */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: 1fr;
 
     gap: 20px;
